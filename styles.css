@@ -85,10 +85,14 @@
       color: #fff;
   }
 
+
   .boutons .btn-connexion {
       background-color: #fff;
       color: #000;
+      border: 2px solid var(--primary-color);
+
   }
+
 
   /* BANNIERE */
   .banniere {
@@ -102,14 +106,16 @@
       background-size: cover;
       background-position: center;
       overflow: hidden;
+      
   }
 
   .banniere .overlay {
       position: absolute;
       inset: 0;
       background-color: var(--primary-color);
-      opacity: 0.8;
-      /* z-index: 2; */
+      opacity: 0.9;
+      z-index: 2;
+      mix-blend-mode: multiply;
   }
 
   /* CONTENU TEXTE */
@@ -166,10 +172,15 @@
   .chiffres .box {
       background-color: #fff;
       text-align: center;
-      padding: 20px;
+      padding: 15px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       width: 22%;
+  }
+
+  .chiffres .box:hover{
+    transform: scale(1.1);
+    cursor: pointer;
   }
 
   .chiffres .box h2 {
@@ -350,7 +361,7 @@
         inset: 0;
         background-color: var(--primary-color);
         opacity: 0.8;
-        /* z-index: 2; */
+        mix-blend-mode: multiply;
   }
 
  .cta .cta-text{
@@ -426,7 +437,9 @@
   footer .border-top {
       border: 1px solid #fff;
       margin-top: 20px;
+      opacity: 0.4;
   }
+
 
   footer p {
       text-align: center;
