@@ -129,7 +129,6 @@
       background-size: cover;
       background-position: center;
       overflow: hidden;
-      
   }
 
   .banniere .overlay {
@@ -146,7 +145,6 @@
       position: relative;
       z-index: 3;
       width: 45%;
-
   }
 
   .contenu-banniere h1 {
@@ -258,14 +256,14 @@
   }
 
   .services-container .box {
-      background-color: #D9A05B;
+      background-color: #fff1BF;
       padding: 30px;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   }
 
   .services-container .box:nth-child(2) {
-      background-color: #F2E5BD;
+      background-color: var(--true-color);
      
   }
 
