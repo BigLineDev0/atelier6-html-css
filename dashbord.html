@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+
+<body>
+    <div class="dashboard">
+
+        <!-- SIDEBAR -->
+        <aside class="sidebar">
+            <div class="logo">
+                <img src="images/logo.png" alt="Logo">
+            </div>
+
+            <nav>
+                <ul class="menu">
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            Tableau de bord
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-book-open"></i>
+                            Cours de cuisine
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-tag"></i>
+                            Catégories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="active">
+                            <i class="fa-solid fa-building"></i>
+                            Restaurants
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="traiteurs.html">
+                            <i class="fa-solid fa-user-group"></i>
+                            Traiteurs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-star"></i>
+                            Avis
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="menu bottom">
+                    <li>
+                        <a href="index.html">
+                            <i class="fa-solid fa-arrow-left"></i>
+                            Retour à l’accueil
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <i class="fa-solid fa-right-from-bracket"></i>
+                            Déconnexion
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- MAIN -->
+        <main class="main">
+
+            <!-- Titre -->
+            <div class="header">
+                <div class="title">
+                    <h1>Restaurants</h1>
+                    <p>Gérez les restaurants de la plateforme</p>
+                </div>
+                <div class="btn">
+                    <a href="#">Ajouter un restaurant</a>
+                </div>
+            </div>
+
+            <!-- Filtre -->
+            <div class="filter-card">
+                <div class="filter-group">
+                    <label for="zone">Zone</label>
+                    <select id="zone">
+                        <option value="">Toutes les zones</option>
+                        <option value="1">Zone 1</option>
+                        <option value="2">Zone 2</option>
+                        <option value="3">Zone 3</option>
+                    </select>
+                </div>
+
+                <button class="btn-filter">Filtrer</button>
+            </div>
+
+            <!-- Tableau -->
+            <div class="table-container">
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>NOM</th>
+                            <th>EMAIL</th>
+                            <th>ZONE</th>
+                            <th>STATUT</th>
+                            <th>ACTIONS</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="name-cell">
+                                <img src="images/thieboudieunerouge.JPG" alt="photo">
+                                <span>Le Djoloff</span>
+                            </td>
+                            <td>contact@ledjoloff.sn</td>
+                            <td>Plateau</td>
+                            <td><span class="status pending">En attente</span></td>
+                            <td class="actions">
+                                <a href="#" class="edit">Modifier</a>
+                                <a href="#" class="delete">Supprimer</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="name-cell">
+                                <img src="images/thieboudieunerouge.JPG" alt="photo">
+                                <span>Sushi Dakar</span>
+                            </td>
+                            <td>contact@sushidakar.sn</td>
+                            <td>Almadies</td>
+                            <td><span class="status verified">Vérifié</span></td>
+                            <td class="actions">
+                                <a href="#" class="edit">Modifier</a>
+                                <a href="#" class="delete">Supprimer</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </main>
+
+    </div>
+
+</body>
+
+</html>

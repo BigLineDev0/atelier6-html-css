@@ -1,0 +1,254 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+  }
+
+  :root {
+      --primary-color: #924010;
+      --secondary-color: #FFB300;
+      --true-color: #FFF3E0;
+  }
+
+  body {
+      background-color: #F9FAFC;
+  }
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background-color: var(--primary-color);
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.logo img {
+  width: 120px;
+  margin-bottom: 30px;
+}
+
+/* MENU */
+.menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.menu li a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.menu li a i{
+  color: var(--secondary-color);
+}
+
+.menu li a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* ACTIF */
+.menu li a.active {
+  background-color:#77360E;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* BOTTOM MENU */
+.menu.bottom {
+  margin-top: 130px;
+}
+
+.menu.bottom li {
+  border-top: 1px solid #AD5418;
+}
+
+/* MAIN */
+.main {
+  background-color: #f9fafc;
+  padding: 70px;
+}
+
+/* Header titre */
+.main .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.main .title h1 {
+  font-size: 28px;
+  color: #111;
+}
+
+.main .title p {
+  font-size: 13px;
+  color: #6b7280;
+}
+
+/* Bouton général */
+.btn a {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #D97805;
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ====== FILTRE ====== */
+.filter-card {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+/* Groupe select */
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.filter-group label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #374151;
+}
+
+.filter-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  background-color: #fff;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.filter-group select:focus {
+  outline: none;
+  border: 1px solid #D97805;
+}
+
+/* Bouton Filtrer */
+.btn-filter {
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: none;
+  background-color: #D97805;
+  color: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  height: 42px;
+}
+/* Container */
+.table-container {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+/* Table */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* Head */
+.data-table thead {
+  background-color: #f9fafc;
+}
+
+.data-table th {
+  text-align: left;
+  padding: 16px;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+/* Rows */
+.data-table td {
+  padding: 16px;
+  color: #111827;
+}
+
+.data-table tbody tr {
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Nom et image */
+.name-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.name-cell img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: #e5e7eb;
+}
+
+/* Status */
+.status {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.pending {
+  background: #fef9c3;
+  color: #b45309;
+}
+
+.status.verified {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.actions a {
+  padding: 8px; 
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.actions a:hover {
+  text-decoration: underline;
+}
+
+.actions .edit {
+  color: #2563eb;
+}
+
+.actions .delete {
+  color: #dc2626;
+}
