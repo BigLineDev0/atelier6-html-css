@@ -9,7 +9,7 @@
 
   /* pixel en rem 
     12px	0.75rem
-    14px	0.875rem
+    14px    0.875rem 
     16px	1rem
     20px	1.25rem
     30px	1.875rem
@@ -49,6 +49,12 @@
       z-index: 1000;
   }
 
+  .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+  }
+
   .logo img {
       width: 8rem;
 
@@ -64,7 +70,7 @@
   nav ul li a {
       text-decoration: none;
       color: #333;
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
       padding: 15px;
   }
 
@@ -78,7 +84,7 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
       background-color: var(--primary-color);
       color: #fff;
   }
@@ -104,7 +110,7 @@
       border: none;
       border-radius: 10px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
       background-color: #fff;
       color: #000;
       text-decoration: none;
@@ -224,7 +230,7 @@
   .chiffres .box {
       background-color: #fff;
       text-align: center;
-      padding: 15px;
+      padding: 1rem;
       border-radius: 10px;
       box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
       width: 22%;
@@ -236,7 +242,7 @@
   }
 
   .chiffres .box h2 {
-      font-size: 25px;
+      font-size: 1.563rem;
       color: var(--primary-color);
 
   }
@@ -260,7 +266,7 @@
 
   .services p {
       text-align: center;
-      font-size: 0.875rem /*14px*/;
+      font-size: 0.875rem /* 14px */;
       color: #666;
   }
 
@@ -291,7 +297,7 @@
   }
 
   .services-container .box p {
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
       color: #666;
       text-align: left;
       margin-top: 10px;
@@ -379,7 +385,7 @@
   .temoignages-container .box .profil h3 {
       margin-left: 50px;
       margin-top: -30px;
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
   }
 
   .profil .rating {
@@ -436,18 +442,18 @@
   }
 
   .cta p {
-    font-size: 14px;
+    font-size: 0.875rem /* 14px */;
     margin-top: 15px;
     margin-bottom: 20px;
   }
 
   .cta .btn{
-      margin-top: 25px;
+      margin-top: 1.563rem;
       padding: 10px 20px;
       border: none;
       border-radius: 8px;
       cursor: pointer;
-      font-size: 14px;
+      font-size: 0.875rem /* 14px */;
       font-weight: bold;
       background-color: #fff;
       color: var(--primary-color);
@@ -457,7 +463,7 @@
   footer {
       background-color: #111828;
       color: #fff;
-      height: 300px;
+      height: 100%;
       padding: 40px 8%;
   }
 
@@ -470,7 +476,7 @@
   }
 
   .footer .box h2 {
-      font-size: 15px;
+      font-size: 1rem /* 16px */;
       margin-bottom: 15px;
   }
 
@@ -540,7 +546,7 @@
 .filtres{
     background-color: #f6f1de;
     padding: 20px 15%;
-    height: 600px;
+    min-height: 100vh;
     /* margin-bottom: 50px; */
 }
 
@@ -566,7 +572,7 @@
 }
 
 .filter-group label {
-  font-size: 14px;
+  font-size: 0.875rem /* 14px */;
   margin-bottom: 5px;
 }
 
@@ -579,7 +585,7 @@
 }
 
 .filter-actions button {
-  padding: 9px 14px;
+  padding: 9px 0.875rem /* 14px */;
   border-radius: 6px;
   border: none;
   cursor: pointer;
@@ -614,7 +620,7 @@
 
 /* Contenu */
 .card-content {
-  padding: 20px;
+  padding: 1.25rem;
   flex: 1;
 }
 
@@ -648,7 +654,7 @@
 
 /* Text */
 .card-content p {
-  font-size: 14px;
+  font-size: 0.875rem /* 14px */;
   margin: 6px 0;
 }
 
@@ -678,7 +684,7 @@
 /*  Colonne droite */
 .card-right {
   width: 160px;
-  padding: 20px;
+  padding: 1.25rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -699,10 +705,10 @@
   background: #111827;
   color: #fff;
   border: none;
-  padding: 10px 14px;
+  padding: 10px 0.875rem /* 14px */;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem /* 14px */;
   text-decoration: none;
 }
 
@@ -716,7 +722,7 @@
     background-color: #f6f1de;
     display: flex;
     justify-content: center;
-    padding: 60px 20px;
+    padding: 60px 1.25rem;
 }
 .profil-card{
     background-color: #fff;
@@ -731,7 +737,7 @@
 
 .form-group{
     border-radius: 8px;
-    padding: 20px;
+    padding: 1.25rem;
     margin-bottom: 15px;
     border: 1px solid #ddd; 
 }
@@ -818,10 +824,10 @@ input[type="file"]{
     color: #fff;
     float: right;
     border: none;
-    padding: 10px 14px;
+    padding: 10px 0.875rem /* 14px */;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.875rem /* 14px */;
 }
 
 .btn-save:hover {
@@ -881,7 +887,7 @@ input[type="file"]{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
-    grid-column-gap: 20px;
+    grid-column-gap: 1.25rem;
     grid-row-gap: 1px;
 }
 
@@ -892,20 +898,20 @@ input[type="file"]{
 .detail-text .carte{
     background: #fff;
     border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
+    margin-bottom: 1.25rem;
+    padding: 1.25rem;
     text-align: start;
     box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .detail-text .carte h3{
-    font-size: 14px;
+    font-size: 0.875rem /* 14px */;
     margin-bottom: 10px;
 }
 
 .detail-text .carte p{
    color: #B6B6B6;
-   font-size: 14px;
+   font-size: 0.875rem /* 14px */;
 }
 
 .detail-text .left .carte .services-grid{
@@ -921,7 +927,7 @@ color: #1bc25b;
 
  .left .carte .services-grid span{
     color: #000;
-    font-size: 14px;
+    font-size: 0.875rem /* 14px */;
  }
 
 .detail-text .right{
@@ -938,10 +944,10 @@ color: #1bc25b;
     background: #5046E5;
     color: #fff;
     border: none;
-    padding: 10px 14px;
+    padding: 10px 0.875rem /* 14px */;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 0.875rem /* 14px */;
     text-decoration: none;
     text-align: center;
     width: 100%;
@@ -958,7 +964,7 @@ color: #1bc25b;
   justify-content: center;
   align-items: center;
   background-color: #f3f4f6;
-  padding: 40px 20px;
+  padding: 40px 1.25rem;
 }
 
 /* Formulaire */
@@ -973,8 +979,8 @@ color: #1bc25b;
 
 .form-login h1 {
   text-align: center;
-  font-size: 20px;
-  margin-bottom: 25px;
+  font-size: 1.25rem;
+  margin-bottom: 1.563rem;
 }
 
 /* Champs */
@@ -994,7 +1000,7 @@ color: #1bc25b;
   padding: 10px 0.75rem /* 12px */;
   border-radius: 6px;
   border: 1px solid #d1d5db;
-  font-size: 14px;
+  font-size: 0.875rem /* 14px */;
 }
 
 .form-input input:focus {
@@ -1019,7 +1025,7 @@ color: #1bc25b;
 /* Inscription */
 .signup {
   font-size: 13px;
-  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
   text-align: start;
 }
 
@@ -1038,7 +1044,7 @@ color: #1bc25b;
   padding: 0.75rem /* 12px */;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 0.875rem /* 14px */;
   text-decoration: none;
   text-align: center;
 }
@@ -1049,6 +1055,15 @@ color: #1bc25b;
 
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 768px) {
+
+    header {
+        padding: 0 2%;
+    }
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
 
     nav ul {
         display: none;
@@ -1063,7 +1078,7 @@ color: #1bc25b;
     }
     .banniere {
         flex-direction: column;
-        text-align: center;
+        text-align: left;
         min-height: auto;
         padding: 40px 5%;
     }
@@ -1078,21 +1093,29 @@ color: #1bc25b;
     
     .contenu-banniere h1 {
         font-size: 2rem;
-        text-align: center;
     }
     
-    .image img, .img-badge {
-        display: none;
+    .image img{
+        width: 320px;
+        height: 200px;
+        object-fit: cover;
+        margin: 0;
+        margin-top: 20px;
     }
-    
+
+    .image .img-badge {
+        top: 40px;
+        right: 15px;
+    }
+
     .chiffres {
         flex-direction: column;
         padding: 40px 5%;
     }
     
     .chiffres .box {
-        width: 100%;
-        margin-bottom: 15px;
+       width: 100%   ;
+
     }
 
     .carte iframe {
@@ -1102,9 +1125,93 @@ color: #1bc25b;
     .services .services-container {
         flex-direction: column;
     }
+    .services h2{
+        font-size: 1.5rem; 
+    }
+
+    .services-container {
+        gap: 30px;
+    }
+    .services-container .box {
+        width: 100%;
+    }
 
     .temoignages-container {
         flex-direction: column;
     }
+
+    .footer {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    footer .sociaux {
+        justify-content: flex-start;
+        margin-right: 0;
+    }
+
+
+    /* PAGE TRAITEUR */
+    .banniere-traiteur {
+        height: 250px;
+        justify-content: start;
+        text-align: start;
+        padding: 1.25rem 5%;
+    }
+
+    .banniere-traiteur h1 {
+        font-size: 2rem;
+    }
+
+    .banniere-traiteur p {
+        font-size: 0.875rem /* 14px */;
+    }
+    .banniere-traiteur .text {
+        margin-left: 0;
+    }
+
+    .filtres{
+        padding: 20px 5%;
+    }
     
+    .input-filtre{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+    
+    .filter-actions{
+        flex-direction: row;
+        justify-content: start;
+        margin-top: 10px;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    .result-filtre {
+        max-width: 100%;
+    }
+    
+    .result-filtre .card {
+        flex-direction: column;
+    }
+
+    .card-image {
+        width: 100%;
+        height: 200px;
+    }
+    .card-content {
+        margin-top: 1rem;
+    }
+
+    .card-right {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 15px;
+    }
 }
