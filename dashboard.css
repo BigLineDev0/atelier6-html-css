@@ -252,3 +252,15 @@
 .actions .delete {
   color: #dc2626;
 }
+
+/* Responsive */
+@media (max-width: 768px) {
+  .dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    flex-direction: colomn;
+  
+  }
+}

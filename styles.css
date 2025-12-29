@@ -215,42 +215,43 @@
     gap: 6px;
   }
 
-  /* chiffres */
-  .chiffres {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      min-height: 30vh;
-      flex-wrap: wrap;
-      gap: 1rem;
-      background-color: var(--true-color);
-      padding: 0 15%;
-  }
+/* ===== CHIFFRES (GRID) ===== */
+.chiffres {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap: 1.5rem;
 
-  .chiffres .box {
-      background-color: #fff;
-      text-align: center;
-      padding: 1rem;
-      border-radius: 10px;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      width: 22%;
-  }
+  min-height: 30vh;
+  padding: 3rem 15%;
+  background-color: var(--true-color);
+}
 
-  .chiffres .box:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-  }
+/* Carte */
+.chiffres .box {
+  background-color: #fff;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.3125rem 0.9375rem rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
 
-  .chiffres .box h2 {
-      font-size: 1.563rem;
-      color: var(--primary-color);
+.chiffres .box:hover {
+  transform: translateY(-0.5rem);
+  cursor: pointer;
+}
 
-  }
+/* Texte */
+.chiffres .box h2 {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+}
 
-  .chiffres .box p {
-      font-size: 0.75rem /* 12px */;
-      color: #666;
-  }
+.chiffres .box p {
+  font-size: 0.75rem;
+  color: #666;
+}
+
 
   /* SERVICES */
   .services {
@@ -726,7 +727,7 @@
 }
 .profil-card{
     background-color: #fff;
-    padding: 30px;
+    padding: 1.875rem /* 30px */;
     border-radius: 0.75rem /* 12px */;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     margin-bottom: 15px;
@@ -1063,6 +1064,7 @@ color: #1bc25b;
         display: block;
         font-size: 1.5rem;
         cursor: pointer;
+        margin-right: 10px;
     }
 
     nav ul {
@@ -1096,7 +1098,7 @@ color: #1bc25b;
     }
     
     .image img{
-        width: 320px;
+        width: 330px;
         height: 200px;
         object-fit: cover;
         margin: 0;
@@ -1104,18 +1106,17 @@ color: #1bc25b;
     }
 
     .image .img-badge {
-        top: 40px;
-        right: 15px;
+        top: 30px;
+        right: 10px;
     }
 
     .chiffres {
-        flex-direction: column;
-        padding: 40px 5%;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 3rem 5%;
+        gap: 20px;
     }
-    
     .chiffres .box {
-       width: 100%   ;
-
+        padding: 20px;
     }
 
     .carte iframe {
@@ -1138,6 +1139,10 @@ color: #1bc25b;
 
     .temoignages-container {
         flex-direction: column;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
     }
 
     .footer {
@@ -1197,6 +1202,7 @@ color: #1bc25b;
     
     .result-filtre .card {
         flex-direction: column;
+        justify-content: center;
     }
 
     .card-image {
@@ -1204,14 +1210,48 @@ color: #1bc25b;
         height: 200px;
     }
     .card-content {
-        margin-top: 1rem;
+        padding: 1.25rem;
+
     }
 
     .card-right {
         width: 100%;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-end;
         margin-top: 15px;
     }
+
+    /* PAGE DETAIL TRAITEUR */
+  
+    .detail-content{
+        padding: 20px;
+    }
+    .detail-text {
+        grid-template-columns: 1fr;
+    }
+
+    /* PAGE INSCRIPTION TRAITEUR  */
+    .profil-card{
+        padding: 20px;
+    }
+
+    .form-group .form-grid{
+        grid-template-columns: 1fr;
+
+    }
+    
+    .input-grid{
+        overflow: hidden;
+    }
+  
+    .checkbox-grid .checkboxes{ 
+        grid-template-columns: 1fr;
+    }
+
+    .input-grid .help-text{
+        padding-right: 20px;
+    }
+
+    
 }
