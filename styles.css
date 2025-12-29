@@ -1046,3 +1046,65 @@ color: #1bc25b;
 .btn-login:hover {
   opacity: 0.9;
 }
+
+/* ===== MEDIA QUERIES ===== */
+@media (max-width: 768px) {
+
+    nav ul {
+        display: none;
+    }
+
+    .boutons{
+        display: none;
+    } 
+
+    .logo img {
+        width: 6rem;
+    }
+    .banniere {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+        padding: 40px 5%;
+    }
+    
+    .banniere .overlay {
+        opacity: 0.8;
+    }
+    
+    .contenu-banniere {
+        max-width: 100%;
+    }
+    
+    .contenu-banniere h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .image img, .img-badge {
+        display: none;
+    }
+    
+    .chiffres {
+        flex-direction: column;
+        padding: 40px 5%;
+    }
+    
+    .chiffres .box {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .carte iframe {
+        width: 100%;
+    }
+    
+    .services .services-container {
+        flex-direction: column;
+    }
+
+    .temoignages-container {
+        flex-direction: column;
+    }
+    
+}

@@ -1,0 +1,3 @@
+le texte alertatif des images donner de textes plus parlant
+dansl le dashboard  revoir le margi top du menu en bas
+factoriser les boutons revoir les balises
